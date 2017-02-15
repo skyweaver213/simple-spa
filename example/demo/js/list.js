@@ -9,6 +9,9 @@ var listView = {
     events: {
         'click .js_tobooking': function() {
             listView.toBookingAction();
+        },
+        'click .js_back':function() {
+            DF.back();
         }
     },
     toBookingAction: function() {
