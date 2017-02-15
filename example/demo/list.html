@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Title</title>
+    <script src="../../lib/require.js"></script>
+    <script src="../../lib/zepto.js"></script>
+    <script src="../../lib/spa.js"></script>
+    <link rel="stylesheet" href="./css/spa.css">
+
+
 </head>
 <body>
+
+<div class="main-viewport">
+    <div class="viewport list-viewport">
+        <style>
+            .list-viewport {
+                background: blanchedalmond;
+            }
+        </style>
+        <div class="viewport-content">
+            list
+            <button class="js_tobooking"> to booking </button>
+        </div>
+
+        <script type="text/fscript" data-src="./js/list.js" ></script>
+    </div>
+</div>
 
 </body>
 </html>

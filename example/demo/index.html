@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Title</title>
+    <script src="../../lib/require.js"></script>
+    <script src="../../lib/zepto.js"></script>
+    <script src="../../lib/spa.js"></script>
+    <link rel="stylesheet" href="./css/spa.css">
+
+
 </head>
 <body>
+
+<div class="main-viewport">
+    <div class="viewport index-viewport" data-no-init="true">
+        <style>
+            .index-viewport {
+                background: cornflowerblue;
+            }
+        </style>
+
+        <div class="viewport-content">
+            index
+
+            <button class="js_tolist"> to list </button>
+        </div>
+
+
+        <script type="text/fscript" data-src="./js/index.js" ></script>
+    </div>
+</div>
+
+<script>
+    DF.init();
+</script>
 
 </body>
 </html>
